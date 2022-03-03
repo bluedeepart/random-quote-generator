@@ -1,13 +1,213 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #333333;
+}
+
+header {
+  padding: 32px 0;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main {
+  padding-bottom: 100px;
+}
+
+/* footer */
+footer {
+  padding: 40px 0;
+  text-align: center;
+  color: #828282;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+/* button */
+header .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.random-quotes {
+  font-size: 18px;
+  line-height: 120%;
+  color: #4f4f4f;
+  background: transparent;
+  border: 0;
+}
+
+.random-quotes svg {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.random-quotes a {
+  text-decoration: none;
+  align-items: center;
+  display: inline-flex;
+  color: inherit;
+}
+
+/* quote */
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.quote-wrapper {
+  font-size: 18px;
+  line-height: 120%;
+  color: #000000;
+  max-width: 614px;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.quote-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 8px;
+  background-color: #f7df94;
+  left: -30px;
+}
+
+.quote-preview {
+  max-width: 614px;
+  width: 100%;
+}
+
+.author-info {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.author-info a {
+  transition: all .3s ease-in-out;
+  padding: 30px;
+  display: block;
+  color: #4F4F4F;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-info a svg{
+  color: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+.author-info a:hover{
+  color: #fff;
+  background-color: #333333;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.author-genre {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.loading-img{
+  max-height: 40px;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 520px;
+  }
+
+  
+  .quote-wrapper::before {
+    left: -50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+  
+  .quote-wrapper {
+    font-size: 36px;
+  }
+
+  .quote-wrapper, h3{
+    margin-bottom: 140px;
+  }
+
+  .quote-wrapper::before {
+    left: -100px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 974px;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .quote-preview{
+    padding: 30px;
+  }
 }
