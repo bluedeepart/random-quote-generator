@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/random-quote-generator/static/css/main.e8565993.css",
+    "main.js": "/random-quote-generator/static/js/main.54ffe68c.js",
+    "static/js/787.6107707c.chunk.js": "/random-quote-generator/static/js/787.6107707c.chunk.js",
+    "static/media/spinner.gif": "/random-quote-generator/static/media/spinner.a1a996746e5e48352c81.gif",
+    "index.html": "/random-quote-generator/index.html",
+    "main.e8565993.css.map": "/random-quote-generator/static/css/main.e8565993.css.map",
+    "main.54ffe68c.js.map": "/random-quote-generator/static/js/main.54ffe68c.js.map",
+    "787.6107707c.chunk.js.map": "/random-quote-generator/static/js/787.6107707c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8565993.css",
+    "static/js/main.54ffe68c.js"
+  ]
+}
